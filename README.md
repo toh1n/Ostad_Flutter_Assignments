@@ -4,7 +4,7 @@ Create a Flutter app with three pages arranged in a tab view screen. Each page w
 have a different coloured floating action button and a centred text widget displaying
 the page number.
 Requirements:
-● Use MaterialApp and Scaffold widgets.
+<li> ● Use MaterialApp and Scaffold widgets. </li>
 ● Include an AppBar with a navigation drawer and a bottom navigation tab bar.
 ● The navigation drawer should allow users to navigate to each page.
 ● The bottom navigation tab bar should enable users to switch between the
