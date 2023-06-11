@@ -107,20 +107,39 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
             ],
           ),
         ),
-        body: TabBarView(
-          controller: _tabController,
-          children: const [
-            Center(
-              child: Text("Page 1"),
-            ),
-            Center(
-              child: Text("Page 2"),
-            ),
-            Center(
-              child: Text("Page 3"),
-            ),
-          ],
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: 25,
+                width: 300,
+                child: ElevatedButton(
+                    onPressed: (){},
+                    child: Text("hello")),
+              ),
+              Padding(padding: EdgeInsets.all(10)),
+              ElevatedButton(onPressed: (){}, child: Text("hello")),
+              Padding(padding: EdgeInsets.all(10)),
+              ElevatedButton(onPressed: (){}, child: Text("hello")),
+
+            ],
+          ),
         ),
+        // body: TabBarView(
+        //   controller: _tabController,
+        //   children: const [
+        //     Center(
+        //       child: Text("Page 1"),
+        //     ),
+        //     Center(
+        //       child: Text("Page 2"),
+        //     ),
+        //     Center(
+        //       child: Text("Page 3"),
+        //     ),
+        //   ],
+        // ),
         bottomNavigationBar: TabBar(
           controller: _tabController,
           tabs: const [
